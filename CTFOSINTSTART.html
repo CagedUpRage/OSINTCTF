@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OSINT Start Page</title>
+</head>
+<body>
+    <p>Welcome to my OSINT CTF</p>
+    <p>You will need to find out three things to be able to put in the correct CTF code:</p>
+    <p>The code is as follows, my home address where I live with my parents, the name of my dog, and what position I played in lacrosse.</p>
+    <p>Here is a link to help you on your search, and a beginning clue, I as well as my parents have Facebook.</p>
+    <a href="https://www.utahcounty.gov/LandRecords/Index.asp">Utah County Land Records</a>
+
+    <form>
+        <label for="password">Enter the CTF: </label>
+        <input type="password" id="password">
+        <input type="button" value="Submit" onclick="checkPswd();" />
+    </form>
+
+    <script type="text/javascript">
+        function checkPswd() {
+            var confirmPassword = "1501kiwidefender"; // Correct CTF code
+            var password = document.getElementById("password").value; // Correct input ID
+            if (password == confirmPassword) {
+                window.location = "./welcome.html"; // Redirect to another page on success
+            } else {
+                alert("CTF is incorrect."); // Alert message if password is incorrect
+            }
+        }
+    </script>
+</body>
+</html>
