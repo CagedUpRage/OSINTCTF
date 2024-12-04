@@ -10,22 +10,6 @@
     <p>Here is a link to help you on your search, and a beginning clue, I as well as my parents have Facebook.</p>
     <a href="https://www.utahcounty.gov/LandRecords/Index.asp">Utah County Land Records</a>
 
-    <form>
-        <label for="password">Enter the CTF: </label>
-        <input type="password" id="password">
-        <input type="button" value="Submit" onclick="checkPswd();" />
-    </form>
-
-    <script type="text/javascript">
-        function checkPswd() {
-            var confirmPassword = "1501kiwidefender"; // Correct CTF code
-            var password = document.getElementById("password").value; // Correct input ID
-            if (password == confirmPassword) {
-                window.location = "./welcome.html"; // Redirect to another page on success
-            } else {
-                alert("CTF is incorrect."); // Alert message if password is incorrect
-            }
-        }
-    </script>
+   
 </body>
 </html>
